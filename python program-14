@@ -1,0 +1,26 @@
+ Ques-python program to check if a string is palindrome or not
+def is_palindrome(string):
+
+    string = string.lower().replace(" ", "")
+
+
+    if string == string[::-1]:
+        return True
+    else:
+        return False
+
+
+strings = ["radar", "level", "python", "madam"]
+
+for string in strings:
+    if is_palindrome(string):
+        print(string, "is a palindrome.")
+    else:
+        print(string, "is not a palindrome.")
+
+        output:
+
+radar is a palindrome.
+level is a palindrome.
+python is not a palindrome.
+madam is a palindrome.
